@@ -446,6 +446,8 @@ footer section Design
 .newsletter .form-control:focus {
   outline: none;
   box-shadow: none;
+  background-color: var(--white-color);
+  color: var(--black-color);
   border-color: var(--primary-color);
 }
 
