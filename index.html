@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="Description" content="Enter your description here" />
-    <title>Pizza</title>
+    <title>Pizza Delivery</title>
+    <link rel="icon" href="images/logo.png" />
     <!-- bootstrap CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
@@ -19,7 +20,6 @@
 
     <!-- custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive-style.css" />
   </head>
 
   <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
@@ -39,7 +39,6 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <!-- <span class="navbar-toggler-icon"></span> -->
             <i class="fas fa-stream navbar-toggler-icon"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
@@ -50,38 +49,42 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">About Us</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#explore-food">Explore Foods</a>
+                <a class="nav-link" href="#menu">Menu</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#testimonial">Reviews</a>
               </li>
-              <li><button class="main-btn">1200 345 123</button></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li>
+                <button class="main-btn text-white">0120 555 1234</button>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
 
-    <!-- section-1 top-banner -->
+    <!-- section top-banner -->
     <section id="home">
-      <div class="container-fluid px-0 top-banner">
+      <div class="container-fluid px-0 top-banner mb-4">
         <div class="container">
           <div class="row">
             <div class="col-lg-5 col-md-6">
               <h1>
-                UNLIMITED <br />
-                MEDIUM <span>PIZZAS</span>
+                GREATEST <br />
+                PIZZAS in <br />
+                <span>SHONAN</span>
               </h1>
-              <h2>Medium 2-topping* pizza</h2>
-              <p>
-                *Additional charge for premium toppings. Minimum of 2 required.
-              </p>
+              <h2>Crispy Pizzas Ready In Minutes.</h2>
+              <p>*Free and Fast Delivery. Minimum 2 orders required!</p>
               <div class="mt-4">
                 <button class="main-btn">
-                  Order now <i class="fas fa-shopping-basket ps-3"></i>
+                  <a href="#contact" class="text-white">PLACE ORDER</a>
                 </button>
               </div>
             </div>
@@ -90,20 +93,121 @@
       </div>
     </section>
 
-    <!-- section-2 our-menu -->
-    <section class="our-menu p-4">
+    <!-- section menu -->
+    <section id="menu" class="our-menu p-4">
       <div class="container text-center">
-        <h2 class="pb-4">Our Menu</h2>
+        <h2 class="pt-3 pb-4 text-secondary">Pizza Menu</h2>
+        <div class="row mb-4">
+          <div class="col-6 col-sm-2 mb-4 mb-lg-0">
+            <div class="card">
+              <div class="cat-image">
+                <a class="link_category_product" href="#">
+                  <img
+                    src="./images/img/pizza1.jpg"
+                    class="img-fluid pizza-card"
+                  />
+                </a>
+              </div>
+              <div class="cat-title">
+                <a href="#">AMERICAN GARLIC</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-2 mb-4 mb-lg-0">
+            <div class="card">
+              <div class="cat-image">
+                <a class="link_category_product" href="#">
+                  <img
+                    src="./images/img/pizza2.jpg"
+                    class="img-fluid pizza-card"
+                  />
+                </a>
+              </div>
+              <div class="cat-title">
+                <a href="#">JENOBEZE</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-2 mb-4 mb-lg-0">
+            <div class="card">
+              <div class="cat-image">
+                <a class="link_category_product" href="#">
+                  <img
+                    src="./images/img/pizza3.jpg"
+                    class="img-fluid pizza-card"
+                  />
+                </a>
+              </div>
+              <div class="cat-title">
+                <a href="#">PEPERONCINI</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-2 mb-4 mb-lg-0">
+            <div class="card">
+              <div class="cat-image">
+                <a class="link_category_product" href="#">
+                  <img
+                    src="./images/img/pizza4.jpg"
+                    class="img-fluid pizza-card"
+                  />
+                </a>
+              </div>
+              <div class="cat-title">
+                <a href="#">PINEAPPLE</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-2 mb-4 mb-lg-0">
+            <div class="card">
+              <div class="cat-image">
+                <a class="link_category_product" href="#">
+                  <img
+                    src="./images/img/pizza5.jpg"
+                    class="img-fluid pizza-card"
+                  />
+                </a>
+              </div>
+              <div class="cat-title">
+                <a href="#">SHONAN SPECIAL</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-2 mb-4 mb-lg-0">
+            <div class="card">
+              <div class="cat-image">
+                <a class="link_category_product" href="#">
+                  <img
+                    src="./images/img/pizza6.jpg"
+                    class="img-fluid pizza-card"
+                  />
+                </a>
+              </div>
+              <div class="cat-title">
+                <a href="#">SUPER MIX</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="pb-3 text-secondary">Side Menu</h2>
         <div class="row">
           <div class="col-6 col-sm-2 mb-4 mb-lg-0">
             <div class="card">
               <div class="cat-image">
                 <a class="link_category_product" href="#">
-                  <img src="./images/img/category1.png" class="img-fluid" />
+                  <img
+                    src="./images/img/category1.png"
+                    class="img-fluid side-card"
+                  />
                 </a>
               </div>
               <div class="cat-title">
-                <a href="#">Pizza</a>
+                <a href="#">Mini Pizza</a>
               </div>
             </div>
           </div>
@@ -112,11 +216,14 @@
             <div class="card">
               <div class="cat-image">
                 <a class="link_category_product" href="#">
-                  <img src="./images/img/category2.png" class="img-fluid" />
+                  <img
+                    src="./images/img/category2.png"
+                    class="img-fluid side-card"
+                  />
                 </a>
               </div>
               <div class="cat-title">
-                <a href="#">Sauces</a>
+                <a href="#">Tacos</a>
               </div>
             </div>
           </div>
@@ -125,7 +232,10 @@
             <div class="card">
               <div class="cat-image">
                 <a class="link_category_product" href="#">
-                  <img src="./images/img/category3.png" class="img-fluid" />
+                  <img
+                    src="./images/img/category3.png"
+                    class="img-fluid side-card"
+                  />
                 </a>
               </div>
               <div class="cat-title">
@@ -138,7 +248,10 @@
             <div class="card">
               <div class="cat-image">
                 <a class="link_category_product" href="#">
-                  <img src="./images/img/category4.png" class="img-fluid" />
+                  <img
+                    src="./images/img/category4.png"
+                    class="img-fluid side-card"
+                  />
                 </a>
               </div>
               <div class="cat-title">
@@ -151,7 +264,10 @@
             <div class="card">
               <div class="cat-image">
                 <a class="link_category_product" href="#">
-                  <img src="./images/img/category5.png" class="img-fluid" />
+                  <img
+                    src="./images/img/category5.png"
+                    class="img-fluid side-card"
+                  />
                 </a>
               </div>
               <div class="cat-title">
@@ -164,7 +280,10 @@
             <div class="card">
               <div class="cat-image">
                 <a class="link_category_product" href="#">
-                  <img src="./images/img/category6.png" class="img-fluid" />
+                  <img
+                    src="./images/img/category6.png"
+                    class="img-fluid side-card"
+                  />
                 </a>
               </div>
               <div class="cat-title">
@@ -176,7 +295,7 @@
       </div>
     </section>
 
-    <!-- section-3 about-->
+    <!-- section about-->
     <section id="about">
       <div class="about-section wrapper">
         <div class="container">
@@ -230,14 +349,14 @@
       </div>
     </section>
 
-    <!-- section-4 explore food-->
+    <!-- section explore food-->
     <section id="explore-food">
       <div class="explore-food wrapper">
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
               <div class="text-content text-center">
-                <h2>Explore Our Foods</h2>
+                <h2 class="text-secondary">Explore Our Side Orders</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
                   et purus a odio finibus bibendum in sit amet leo. Mauris
@@ -258,7 +377,9 @@
                     Ac haca ullamcorper donec ante habi tasse donec imperdiet
                     eturpis varius per a augue magna hac. Nec hac…
                   </p>
-                  <button class="mt-2 main-btn">Read More</button>
+                  <button class="mt-2 main-btn float-end">
+                    <a href="#" class="text-secondary">Read More</a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -266,15 +387,14 @@
               <div class="card border">
                 <img src="images/img/img-4.jpg" class="img-fluid" />
                 <div class="p-3">
-                  <h5>
-                    The Ultimate Hangover Burger: Egg in a Hole Burger Grilled
-                    Cheese
-                  </h5>
+                  <h5>The Ultimate Hangover Burger: Egg Hole Burger</h5>
                   <p>
                     Ac haca ullamcorper donec ante habi tasse donec imperdiet
                     eturpis varius per a augue magna hac. Nec hac…
                   </p>
-                  <button class="mt-2 main-btn">Read More</button>
+                  <button class="mt-2 main-btn float-end">
+                    <a href="#" class="text-secondary">Read More</a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -287,7 +407,9 @@
                     Ac haca ullamcorper donec ante habi tasse donec imperdiet
                     eturpis varius per a augue magna hac. Nec hac…
                   </p>
-                  <button class="mt-2 main-btn">Read More</button>
+                  <button class="mt-2 main-btn float-end">
+                    <a href="#" class="text-secondary">Read More</a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -296,11 +418,11 @@
       </div>
     </section>
 
-    <!-- Section-5 testimonial-->
+    <!-- Section testimonial-->
     <section id="testimonial">
       <div class="wrapper testimonial-section">
         <div class="container text-center">
-          <div class="text-center pb-4">
+          <div class="text-center pb-2">
             <h2>Testimonial</h2>
           </div>
           <div class="row">
@@ -337,38 +459,83 @@
                     <div class="carousel-caption">
                       <img src="images/reviews/review-1.jpg" />
                       <p>
-                        "Far far away, behind the word mountains, far from the
-                        countries Vokalia and Consonantia, there live the blind
-                        texts. "
+                        "The Pizza is awesome!! The best Pizza I've had in the
+                        757!!! The only place I ever order Pizza from. The
+                        Garlic Bread was delicious too!!! What a good place to
+                        eat if you love Pizza!!"
                       </p>
-                      <h5>Johnthan Doe - UX Designer</h5>
+                      <h5>Mark River - Graphic Designer</h5>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <div class="carousel-caption">
                       <img src="images/reviews/review-2.jpg" />
                       <p>
-                        "Far far away, behind the word mountains, far from the
-                        countries Vokalia and Consonantia, there live the blind
-                        texts. "
+                        "Been coming here since 1976 whenever I'm in town. Large
+                        pies, great crust, superb quality of the ingredients,
+                        never disappointed. I like their sausage, peppers, &
+                        onions pizza. Mama mia, its a good!!
                       </p>
-                      <h5>Maccy Doe - Front End</h5>
+                      <h5>Lucy Doe - Front End Engineer</h5>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <div class="carousel-caption">
                       <img src="images/reviews/review-3.jpg" />
                       <p>
-                        "Far far away, behind the word mountains, far from the
-                        countries Vokalia and Consonantia, there live the blind
-                        texts. "
+                        "Best pizza and marinara sauce on the Peninsula! They
+                        also support local schools and charities. Very family
+                        friendly. Mine and my five year old's number one choice
+                        for pizza!"
                       </p>
-                      <h5>Johnthan Doe - UX Designer</h5>
+                      <h5>Taro Suzuki - Marketing</h5>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section contact -->
+    <section class="p-5" id="contact">
+      <div class="container">
+        <div class="row g-4 contact">
+          <h2 class="text-center mb-2 text-dark">Contact Information</h2>
+          <div class="col-md information">
+            <!-- <h2 class="text-center mb-4 text-secondary">Contact Information</h2> -->
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <span class="fw-bold">Location:</span> 2-22-2 Zushi KANAGAWA
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Main Office:</span> 4-55-4554 Yokohama
+                KANAGAWA
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Toll-Free Line:</span> 0120-555-1234
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Enquiry Email:</span>
+                enquiry@digitalcamp.com
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Homepage:</span>
+                https://www.pizzashop.com
+              </li>
+            </ul>
+          </div>
+          <div class="col-md align-content-center map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52078.36106545257!2d139.45239121479582!3d35.33336507738622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018466e19d7eb4f%3A0x52897c82cf1085cf!2sRiviera%20Zushi%20Marina!5e0!3m2!1sen!2sjp!4v1641543020411!5m2!1sen!2sjp"
+              width="450"
+              height="230"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
       </div>
@@ -380,7 +547,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6 text-center">
-              <div class="footer-social pb-4 text-center">
+              <div class="footer-social pt-3 text-center">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-youtube"></i></a>

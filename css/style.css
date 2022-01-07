@@ -33,8 +33,8 @@ ol {
 
 /*===== Variable Define =====*/
 :root {
-  --primary-color: #ffc222;
-  --secondry-color: #00a149;
+  --primary-color: #ffc422;
+  --secondry-color: #66ff55b0;
   --white-color: #fff;
   --text-color: #b0b0b0;
   --black-color: #1e1d23;
@@ -127,8 +127,8 @@ p {
   display: inline-block;
   padding: 0.625rem 1.875rem;
   line-height: 1.5625rem;
-  background-color: var(--primary-color);
-  border: 0.1875rem solid var(--primary-color);
+  background-color: var(--secondry-color);
+  border: 0.1875rem solid var(--secondry-color);
   color: var(--black-color);
   font-size: 0.9375rem;
   font-weight: 600;
@@ -185,8 +185,7 @@ p {
   color: var(--white-color);
   letter-spacing: 1px;
 }
-.nav-link:hover,
-.nav-link.active {
+.nav-link:hover {
   color: var(--primary-color) !important;
 }
 .navigation-wrap .main-btn {
@@ -195,7 +194,7 @@ p {
   margin-left: 0.625rem;
 }
 
-/* Change navbar styling on scroll */
+/* Navbar Scroll */
 .navigation-wrap.scroll-on {
   position: fixed;
   background-color: var(--white-color);
@@ -215,12 +214,13 @@ p {
 
 /*
 ==========================================
-   top-banner Design
+   Top-banner Design
 ==========================================
 */
 .top-banner {
   width: 100%;
-  background: url("../images/bg/bg-1.jpg") no-repeat center;
+  height: 100vh;
+  background: url("../images/img/background.jpg") no-repeat center;
   background-size: cover;
   padding: 16.875rem 0 9.375rem;
 }
@@ -230,7 +230,7 @@ p {
 
 /*
 ==========================================
-  our-menu Design
+  Menu Design
 ==========================================
 */
 .our-menu .card {
@@ -241,28 +241,6 @@ p {
   display: block;
   z-index: 1;
 }
-.our-menu .link_category_product::before {
-  position: absolute;
-  content: "";
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 2px dotted var(--secondry-color);
-  z-index: -1;
-  transform: translateX(-50%) translateY(-50%) scale(0);
-  background: var(--primary-color);
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-.card:hover .link_category_product::before {
-  transform: translateX(-50%) translateY(-50%) scale(1);
-}
-
 .our-menu .cat-title a {
   text-align: center;
   font-size: 0.8125rem;
@@ -275,10 +253,26 @@ p {
 .card:hover .cat-title a {
   color: var(--primary-color);
 }
+.side-card {
+  height: 100px;
+}
+.pizza-card {
+  height: 80px;
+  width: 120px;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 1px 5px 3px var(--text-color);
+  box-shadow: 3px 1px 5px 3px var(--text-color);
+}
+.pizza-card:hover,
+.side-card:hover {
+  transform: scale(1.04);
+  transform: scale(1.05);
+  transition: 2s ease-out;
+}
 
 /*
 ==========================================
- about section Design
+ About Section Design
 ==========================================
 */
 .about-section {
@@ -294,7 +288,7 @@ p {
 
 /*
 ==========================================
- food type section Design
+ Food Section Design
 ==========================================
 */
 .food-type {
@@ -322,13 +316,19 @@ p {
 
 /*
 ==========================================
- explore food section Design
+ Explore Food Design
 ==========================================
 */
 .explore-food .card {
   border: none;
   background-color: transparent;
   border-radius: 0.9375rem;
+  -webkit-box-shadow: 3px 1px 5px 3px var(--text-color);
+  box-shadow: 3px 1px 5px 3px var(--text-color);
+}
+.explore-food .card:hover {
+  transform: scale(1.02);
+  transition: 2s ease;
 }
 .explore-food .card img {
   border-radius: 15px 15px 0 0;
@@ -342,21 +342,28 @@ p {
   padding-bottom: 1rem;
   border-bottom: 0.0625rem solid #eee;
 }
+.explore-food h5 {
+  color: var(--black-color);
+}
 .explore-food p {
   color: var(--text-color);
   font-size: 14px;
   line-height: 22px;
 }
+.float-end {
+  padding: 4px 10px;
+}
 
 /*
 ==========================================
- testimonial section Design
+ Testimonial Section Design
 ==========================================
 */
 .testimonial-section {
-  background: var(--secondry-color);
+  background: var(--primary-color);
 }
-.testimonial-section h2 {
+.testimonial-section h2,
+h5 {
   color: var(--white-color);
 }
 .testimonial-section .carousel-item {
@@ -397,7 +404,7 @@ p {
 
 /*
 ==========================================
-footer section Design
+Footer Section Design
 ==========================================
 */
 .footer {
@@ -457,7 +464,6 @@ footer section Design
   .text-content {
     width: 100%;
   }
-
   /* navbar brand */
   .navigation-wrap .navbar-brand img {
     height: 3.8125rem;
@@ -470,20 +476,31 @@ footer section Design
     line-height: 1.875rem;
     color: var(--black-color);
   }
-
-  /* Banner Design */
+  /* banner Design */
   .top-banner {
     padding: 9.375rem 0 9.375rem;
   }
-
   /* carousel design */
   .testimonial-section .carousel-caption p {
     padding: 0;
   }
-
   /* footer link */
   .footer .footer-social a i {
     padding: 0 0.75rem;
+  }
+  /* contact information */
+  .contact {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact .map,
+  .information {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -492,17 +509,15 @@ footer section Design
   h1 {
     font-size: 2.8rem;
   }
-
   h2 {
     font-size: 1.3rem;
     line-height: 28px;
   }
-
   /* top banner */
   .top-banner {
+    height: 60vh;
     padding: 10.375rem 0 9.375rem;
   }
-
   /* carousel design */
   .testimonial-section .carousel-item {
     padding: 11rem 3.125rem;
