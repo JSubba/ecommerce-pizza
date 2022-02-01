@@ -8,23 +8,19 @@
   margin: 0;
   padding: 0;
 }
-
 :active,
 :hover,
 :focus {
   outline: 0 !important;
   outline-offset: 0;
 }
-
 a,
 a:hover {
   text-decoration: none;
 }
-
 a:hover {
   color: var(--primary-color) !important;
 }
-
 ul,
 ol {
   margin: 0;
@@ -68,6 +64,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: var(--secondry-color);
+  border-radius: 5px;
 }
 
 /*
@@ -402,6 +399,19 @@ h5 {
   opacity: 1;
 }
 
+/* 
+==========================================
+Contact Section Design
+========================================== 
+*/
+.map iframe {
+  width: 100%;
+  margin: auto;
+}
+.contact-container li {
+  list-style: none;
+}
+
 /*
 ==========================================
 Footer Section Design
@@ -417,6 +427,9 @@ Footer Section Design
 }
 .footer .footer-social a:hover i {
   color: var(--primary-color);
+}
+.footer form {
+  max-width: 450px;
 }
 
 /* Form Control */
@@ -490,7 +503,6 @@ Footer Section Design
   }
   /* contact information */
   .contact {
-    /* width: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -521,6 +533,9 @@ Footer Section Design
   /* carousel design */
   .testimonial-section .carousel-item {
     padding: 11rem 3.125rem;
+  }
+  .footer form {
+    margin: 10px 30px;
   }
 }
 
