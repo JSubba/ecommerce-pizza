@@ -30,12 +30,12 @@ ol {
 /*===== Variable Define =====*/
 :root {
   --primary-color: #ffc422;
-  --secondry-color: #66ff55b0;
+  --secondary-color: #66ff55b0;
   --white-color: #fff;
   --text-color: #b0b0b0;
   --black-color: #1e1d23;
   --primary-font: "Roboto", sans-serif;
-  --secondry-font: "Quicksand", sans-serif;
+  --secondary-font: "Quicksand", sans-serif;
 }
 
 html {
@@ -63,7 +63,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--secondry-color);
+  background: var(--black-color);
   border-radius: 5px;
 }
 
@@ -90,12 +90,12 @@ h2 {
   font-size: 2rem;
   text-transform: capitalize;
   font-family: var(--secondry-font);
-  color: var(--secondry-color);
+  color: var(--secondary-color);
   line-height: 3rem;
 }
 
 h4 {
-  color: var(--secondry-color);
+  color: var(--secondary-color);
   font-family: var(--secondry-font);
   text-transform: capitalize;
   font-size: 1.125rem;
@@ -106,7 +106,7 @@ h4 {
 h5 {
   color: var(--black-color);
   text-transform: capitalize;
-  font-family: var(--secondry-font);
+  font-family: var(--secondary-font);
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
@@ -124,8 +124,8 @@ p {
   display: inline-block;
   padding: 0.625rem 1.875rem;
   line-height: 1.5625rem;
-  background-color: var(--secondry-color);
-  border: 0.1875rem solid var(--secondry-color);
+  background-color: var(--secondary-color);
+  border: 0.1875rem solid var(--secondary-color);
   color: var(--black-color);
   font-size: 0.9375rem;
   font-weight: 600;
@@ -227,7 +227,75 @@ p {
 
 /*
 ==========================================
-  Menu Design
+   Menu Design
+==========================================
+*/
+.pizzas {
+  padding: 1rem 0;
+}
+.pizzas-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+}
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+.bag-btn {
+  position: absolute;
+  top: 70%;
+  right: 0;
+  background: var(--white-color);
+  border: none;
+  text-transform: uppercase;
+  padding: 0.5rem 0.75rem;
+  letter-spacing: var(--mainSpacing);
+  font-weight: bold;
+  transition: var(--mainTransition);
+  transform: translateX(101%);
+  cursor: pointer;
+}
+.bag-btn:hover {
+  filter: brightness(70%);
+}
+.fa-shopping-cart {
+  margin-right: 0.5rem;
+}
+.img-container:hover .bag-btn {
+  transform: translateX(0);
+}
+.pizza-img {
+  display: block;
+  width: 100%;
+  min-height: 10rem;
+  transition: var(--mainTransition);
+  border-radius: 5px;
+}
+.img-container:hover {
+  opacity: 0.8;
+}
+.pizza h3 {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  letter-spacing: var(--mainSpacing);
+  text-align: center;
+}
+.pizza h4 {
+  color: var(--black-color);
+  margin-top: 0.7rem;
+  letter-spacing: var(--mainSpacing);
+  text-align: center;
+}
+
+/*
+==========================================
+  Side Menu Design
 ==========================================
 */
 .our-menu .card {
@@ -247,24 +315,8 @@ p {
   font-weight: 700;
   color: var(--black-color);
 }
-.card:hover .cat-title a {
-  color: var(--primary-color);
-}
 .side-card {
-  height: 100px;
-}
-.pizza-card {
-  height: 80px;
-  width: 120px;
-  border-radius: 5px;
-  -webkit-box-shadow: 3px 1px 5px 3px var(--text-color);
-  box-shadow: 3px 1px 5px 3px var(--text-color);
-}
-.pizza-card:hover,
-.side-card:hover {
-  transform: scale(1.04);
-  transform: scale(1.05);
-  transition: 2s ease-out;
+  height: 110px;
 }
 
 /*
@@ -473,11 +525,9 @@ Footer Section Design
 
 /* Media Queries */
 @media (max-width: 991px) {
-  /*custom classes  */
   .text-content {
     width: 100%;
   }
-  /* navbar brand */
   .navigation-wrap .navbar-brand img {
     height: 3.8125rem;
   }
@@ -489,19 +539,15 @@ Footer Section Design
     line-height: 1.875rem;
     color: var(--black-color);
   }
-  /* banner Design */
   .top-banner {
     padding: 9.375rem 0 9.375rem;
   }
-  /* carousel design */
   .testimonial-section .carousel-caption p {
     padding: 0;
   }
-  /* footer link */
   .footer .footer-social a i {
     padding: 0 0.75rem;
   }
-  /* contact information */
   .contact {
     display: flex;
     flex-direction: column;
@@ -515,9 +561,7 @@ Footer Section Design
     justify-content: center;
   }
 }
-
 @media (max-width: 767px) {
-  /* custom css */
   h1 {
     font-size: 2.8rem;
   }
@@ -525,12 +569,10 @@ Footer Section Design
     font-size: 1.3rem;
     line-height: 28px;
   }
-  /* top banner */
   .top-banner {
     height: 60vh;
     padding: 10.375rem 0 9.375rem;
   }
-  /* carousel design */
   .testimonial-section .carousel-item {
     padding: 11rem 3.125rem;
   }
@@ -538,9 +580,12 @@ Footer Section Design
     margin: 10px 30px;
   }
 }
-
+@media (max-width: 576px) {
+  .pizzas-center {
+    width: 70vw;
+  }
+}
 @media (max-width: 330px) {
-  /* carousel design */
   .testimonial-section .carousel-item {
     padding: 13rem 3.125rem;
   }
